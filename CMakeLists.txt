@@ -16,6 +16,13 @@ add_definitions(${LLVM_DEFINITIONS})
 add_executable(analyzer 
     src/parser.cpp
     src/rules/rule501.cpp
+    src/rules/rule570.cpp
+    src/rules/rule502.cpp
+    src/rules/rule606.cpp
+    src/rules/rule517.cpp
+    src/rules/rule523.cpp
+    src/rules/rule560.cpp
+    src/rules/rule593.cpp
 )
 
 target_link_libraries(analyzer PRIVATE

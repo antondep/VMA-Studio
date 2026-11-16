@@ -12,6 +12,7 @@ public:
     explicit ASTVisitor(clang::ASTContext *context) : context_(context) {}
 
     bool VisitBinaryOperator(clang::BinaryOperator *op);
+    bool VisitIfStmt(clang::IfStmt *stmt);
 
 private:
     clang::ASTContext *context_;
